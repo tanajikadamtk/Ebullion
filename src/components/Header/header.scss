@@ -1,0 +1,98 @@
+
+@import '../../styles/scss/custom-variables';
+
+@import '../../styles/scss/custom-mixins';
+
+.header-navigation {
+    // position: relative;
+    .navbar-toggler {
+        &:focus {
+            outline: unset;
+            border: unset;
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            outline: unset;
+            border: none;
+            box-shadow: none;
+        }
+    }
+  
+    .nav-content{
+        .nav-link {
+            @include fontStyle(14px, 700);
+            color: #ffffff;
+            padding: 20px 15px;
+            border-bottom: 4px solid transparent;
+    
+            &:hover {
+                border-bottom: 4px solid $secondary;
+            }
+        }
+    }
+
+    .social-media-icons {
+        position: relative;
+        .nav-link {
+            position: relative;
+            border-bottom: 4px solid transparent;
+            padding: 0px 10px;
+            
+            // img{
+            //     width: 25px;
+            // }
+
+            &:hover {
+                border-bottom: 4px solid transparent;
+            }
+
+            span{
+                @include fontStyle(13px, 300);
+                background-color: $secondary;
+                padding: 1px 6px;
+                border-radius: 10px;
+                position: absolute;
+                right: 0px;
+                top: -5px;
+            }
+            
+        }
+
+    }
+}
+
+@media (max-width: 991px) {
+    .header-navigation {
+        .nav-content{
+            padding: 10px 0;
+            .nav-link {
+                border-bottom: 4px solid transparent;
+                padding: 10px 0;
+        
+                &:hover {
+                    border-bottom: 4px solid transparent;
+                }
+            }
+        }
+        .social-media-icons{
+            .nav-link + .nav-link{
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    .header-navigation {
+        .social-media-icons{
+            .logger-show-hide{
+                position: initial;
+            }
+
+            .search-show-hide{
+                position: initial;
+            }
+        }
+    } 
+}

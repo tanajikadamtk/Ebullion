@@ -1,0 +1,21 @@
+@import '../../styles/scss/custom-variables';
+@import '../../styles/scss/custom-mixins';
+
+.custom-icon-button{
+    padding: 10px 25px;
+    border-radius: 6px;
+    @include fontStyle(14px, 400);
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+    color: $primary;
+    background-color: transparent;
+    text-transform: uppercase;
+
+    &:hover, &:active{
+        border: 1px solid $secondary;
+        color: $primary;
+         background-color: transparent;
+    }
+}

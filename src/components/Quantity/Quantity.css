@@ -1,0 +1,44 @@
+/*--------------------------*/
+.quantity-counter-wrapper .quantity-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 130px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #E8E8EB;
+  background-color: #E9ECEF;
+  font-size: 14px;
+  font-weight: 400;
+}
+.quantity-counter-wrapper .quantity-counter button:focus,
+.quantity-counter-wrapper .quantity-counter input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.quantity-counter-wrapper .quantity-counter a,
+.quantity-counter-wrapper .quantity-counter a:hover {
+  text-decoration: none;
+}
+.quantity-counter-wrapper .quantity-counter .input-qty {
+  text-align: center;
+  border: none;
+  width: 40px;
+  background-color: #E9ECEF;
+}
+.quantity-counter-wrapper .quantity-counter .qty-btn-minus, .quantity-counter-wrapper .quantity-counter .qty-btn-plus {
+  border: none;
+  font-size: 10px;
+  width: 40px;
+  transition: 0.3s;
+  background-color: #E9ECEF;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.quantity-counter-wrapper .quantity-counter .qty-btn-plus {
+  margin-left: -1px;
+}
+.quantity-counter-wrapper .quantity-counter .qty-btn-minus {
+  margin-right: -1px;
+}/*# sourceMappingURL=Quantity.css.map */

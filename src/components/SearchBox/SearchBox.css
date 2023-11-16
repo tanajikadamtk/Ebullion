@@ -1,0 +1,31 @@
+.search-box-show .form-control {
+  width: 300px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #99834d;
+  padding: 15px 10px;
+  color: #000000;
+  position: absolute;
+  top: 60px;
+  left: -100px;
+  z-index: 3;
+  font-size: 14px;
+  font-weight: 400;
+}
+.search-box-show .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #99834d;
+}
+
+@media (max-width: 991px) {
+  .search-box-show .form-control {
+    top: 70px;
+    left: 0;
+  }
+}
+@media (max-width: 350px) {
+  .search-box-show .form-control {
+    width: 250px;
+  }
+}/*# sourceMappingURL=SearchBox.css.map */

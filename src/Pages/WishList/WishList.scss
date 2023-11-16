@@ -1,0 +1,231 @@
+//  SCSS For Display -Grid
+
+@import "../../styles/scss/custom-variables";
+@import "../../styles/scss/custom-mixins";
+
+.wishlist {
+  .headline_highlighted {
+    background-color: $primary;
+    color: $text-decoration-color;
+    padding: 10px 25px;
+    border-radius: 6px;
+
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+
+  .wishlist-wrapper {
+    .wishlist-history-wrapper {
+      .wishlist-history {
+        .image_wrapper {
+          width: 97px;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      max-height: 600px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 0.625rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #f8f8f8;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #bcbcbc;
+        border-radius: 10px;
+      }
+
+      // Changes in flex To grid
+      .wishlist-history {
+        display: grid !important;
+        grid-template-columns: repeat(6, 1fr);
+        place-items: center;
+        gap: 20px;
+        padding: 15px 30px;
+        border-radius: 4px;
+        border: 1px solid #e1e1e1;
+        background: #f9f9f9;
+        width: 98%;
+
+        >* {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        h5 {
+          @include fontStyle(18px, 600);
+        }
+
+        p {
+          @include fontStyle(16px, 400);
+        }
+      }
+
+      .wishlist-history+.wishlist-history {
+        margin-top: 15px;
+      }
+    }
+
+    .custom-button {
+      @include fontStyle(14px, 400);
+      padding: 12px 12px;
+      box-shadow: none;
+    }
+
+    .custom-icon-button {
+      @include fontStyle(14px, 400);
+      border: 2px solid $primary;
+      color: $primary;
+      background-color: transparent;
+
+      &:hover {
+        border: 2px solid $primary;
+        color: $primary;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.product {
+  // margin: 10px;
+  text-align: center;
+  justify-content: center;
+
+  p.product_status {
+    font-size: 16px;
+    padding: 5px;
+    //   border-radius: 5px;
+    width: 120px;
+
+    &.product_status_in {
+      color: #22670F;
+      border-radius: 90px;
+      background: #DAFFD0;
+      font-weight: 600 !important;
+
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .wishlist {
+    .wishlist-wrapper {
+      .wishlist-history-wrapper {
+        .wishlist-history h5 {
+          padding: 15px;
+          font-size: 16px;
+          // border: 1px solid red;
+
+          >* {
+            font-size: 14px;
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+          }
+
+          img {
+            margin: 0 auto;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (max-width: 767px) {
+//   .wishlist {
+//     .wishlist-wrapper {
+//       .wishlist-history-wrapper {
+//         .wishlist-history {
+//           padding: 12px;
+//           font-size: 14px;
+//           // grid-template-columns: repeat(2, 3fr);  
+//           h5{
+//             font-size: 14px;
+//             font-weight: 600;
+//           }
+//           .custom-button {
+//                    @include fontStyle(12px, 400);
+//                        padding: 6px 6px;
+//                        box-shadow: none;}
+//           > *{  
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             padding: 0px;
+//           }
+
+
+//           img {
+//             margin: 0 auto;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+// }
+// @media (max-width:1440px) {
+//   .wishlist .wishlist-wrapper .custom-button{
+//     padding: 10px 20px;
+//   }
+
+
+
+// }
+
+
+// // Media query for iPad Mini
+// @media only screen and (min-width: 520px) {
+//   .custom-button {
+//     @include fontStyle(14px, 400);
+//     padding: 6px 6px;
+//     box-shadow: none;
+//   }
+//   body {
+//     font-size: 16px; // Adjust font size for iPad Mini
+//   }
+
+//   // Add more styles as needed for your specific design
+// }

@@ -1,0 +1,62 @@
+.not-signed-in {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #99834d;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 1;
+}
+.not-signed-in .user-logo {
+  background-color: #afafaf;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.not-signed-in .user-logo p {
+  padding: 17px 20px;
+  color: #fff;
+}
+.not-signed-in h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+.not-signed-in p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #585858;
+}
+.not-signed-in .custom-button {
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #552984;
+  color: #552984;
+  background-color: transparent;
+  padding: 12px 20px;
+  box-shadow: none;
+  width: 100%;
+}
+.not-signed-in .custom-button:hover {
+  border: 2px solid #552984;
+  color: #fff;
+  background-color: #552984;
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .not-signed-in {
+    top: 50px;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media (max-width: 350px) {
+  .not-signed-in {
+    width: 100%;
+  }
+}/*# sourceMappingURL=NotSignedIn.css.map */

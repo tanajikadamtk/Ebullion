@@ -1,0 +1,14 @@
+.breadcrumbs ul {
+  display: inline-flex;
+}
+.breadcrumbs li a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #99834d;
+}
+.breadcrumbs .seperator {
+  padding: 0 5px;
+}
+.breadcrumbs .active, .breadcrumbs .visited {
+  color: #000000;
+}/*# sourceMappingURL=BreadCrumb.css.map */

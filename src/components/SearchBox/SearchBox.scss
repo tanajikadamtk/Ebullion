@@ -1,0 +1,43 @@
+@import '../../styles/scss/custom-variables';
+@import '../../styles/scss/custom-mixins';
+
+.search-box-show {
+    .form-control {
+        width: 300px;
+        outline: none;
+        box-shadow: none;
+        border: 1px solid $secondary;
+        padding: 15px 10px;
+        color: $dark;
+        position: absolute;
+        top: 60px;
+        // right: 0px;
+        left: -100px;
+        z-index: 3;
+        @include fontStyle(14px, 400);
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $secondary;
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .search-box-show{
+        .form-control {
+            top: 70px;
+            left: 0;
+        }
+    }
+    
+}
+
+@media(max-width:350px) {
+    .search-box-show{
+        .form-control {
+            width: 250px;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/components/Footer/footer.scss","footer.css","../src/styles/scss/_custom-mixins.scss"],"names":[],"mappings":"AAGA;EACI,WAAA;EACA,gEAAA;EACA,4BAAA;EACA,sBAAA;EACA,2BAAA;ACFJ;ADII;EETA,eFUuB;EETvB,gBFS6B;EACzB,iBAAA;EACA,WAAA;ACDR;ADII;EACI,iBAAA;ACFR;;ADMA;EACI;IACI,aAAA;ECHN;AACF","file":"footer.css"}

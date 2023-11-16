@@ -1,0 +1,83 @@
+@import '../../styles/scss/custom-variables';
+@import '../../styles/scss/custom-mixins';
+
+    .sidebar {
+        .box{
+            width: 100%;
+            height: 6px;
+            border: solid 1px #000;
+        border-color: transparent transparent #000 transparent;
+            opacity: 0.3;
+        border-radius: 0 0 50% 50%
+        }
+
+        .accordion-item{
+            border: none;
+        }
+
+        .accordion-button{
+            @include fontStyle(20px, 400);
+            box-shadow: none;
+            background-color: #fff;
+            border: none;
+            padding: 30px 0 20px 0;
+
+            &:focus{
+                box-shadow: none;
+                background-color: #fff;
+                border: none;
+            }
+            &.collapsed{
+                box-shadow: none;
+                background-color: #fff;
+                border: none;
+            }
+            
+            &::before {
+                width: 12px;
+                height: 2px;
+                margin-left: 0;
+                margin-right: 10px;
+                content: "";
+                background-image: url(../../assets/images/icons/filter.svg);
+                background-repeat: no-repeat;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .accordion-body{
+            padding: 0 20px 20px 20px;
+        }
+
+        .form-check{
+            label{
+                line-height: 30px;
+                @include fontStyle(16px, 400);
+                padding-left: 10px;
+            }
+
+            .active{
+                color: $primary;
+                @include fontStyle(16px, 600);
+            }
+        }
+
+        .form-check + .form-check{
+            padding-top: 15px;
+        }
+        
+        .form-check-input{
+            border: 1px solid $primary;
+            width: 20px;
+            height: 20px;
+        }
+
+        .form-check-input:focus{
+            box-shadow: none;
+        }
+    }
+
+

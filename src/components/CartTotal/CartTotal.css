@@ -1,0 +1,79 @@
+.cart-total {
+  border-radius: 4px;
+  border: 1px solid #C6C6C6;
+  background: #F7F8FA;
+  padding: 30px 15px;
+}
+.cart-total h4 {
+  color: #552984;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.cart-total h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.cart-total p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.cart-total .custom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.cart-total .total-amount {
+  padding-top: 15px;
+  border-top: 1px solid #D6D6D6;
+}
+.cart-total .custom-button {
+  font-size: 16px;
+  font-weight: 500;
+}
+.cart-total .cta {
+  padding-bottom: 30px;
+}
+.cart-total .cta .form-control {
+  padding: 10px 15px;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 400;
+  width: 47%;
+  height: 50px;
+}
+.cart-total .cta .form-control:focus {
+  border: 1px solid #552984;
+}
+.cart-total .cta .custom-button {
+  font-size: 14px;
+  font-weight: 400;
+  border: 2px solid #552984;
+  color: #552984;
+  background-color: transparent;
+  height: 50px;
+  padding: 0px 20px;
+  box-shadow: none;
+}
+.cart-total .cta .custom-button:hover {
+  border: 2px solid #552984;
+  color: #ffffff;
+  background-color: #552984;
+  box-shadow: none;
+}
+
+@media (max-width: 480px) {
+  .cart-total .cta {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cart-total .cta .form-control {
+    width: 100%;
+  }
+  .cart-total .custom-button {
+    padding: 20px 25px;
+  }
+}/*# sourceMappingURL=CartTotal.css.map */

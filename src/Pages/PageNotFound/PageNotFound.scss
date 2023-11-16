@@ -1,0 +1,31 @@
+@import '../../styles/scss/custom-variables';
+@import '../../styles/scss/custom-mixins';
+
+.page-wrapper{
+    text-align: center;
+    img{
+       width: 300px;    
+    }
+    h3{
+        @include fontStyle(42px, 600);
+        color: $primary;
+        margin: 30px 0px 10px;
+    }
+
+    p{
+        @include fontStyle(18px, 400);
+            color: $dark;
+            margin: 0px 0px 60px;
+    }
+    .custom-button{
+        padding: 16px 48px;
+    }
+}
+
+@media(max-width: 576px){
+    .page-wrapper{
+        .custom-button{
+            padding: 16px 25px;
+        }
+    }
+}

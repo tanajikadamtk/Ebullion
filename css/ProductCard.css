@@ -1,0 +1,32 @@
+.card-img-top {
+  position: relative;
+}
+
+.wishlist-check {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  z-index: 10;
+}
+
+.wishlist-check + .wishlist_icon {
+  background: url("../../assets/images/icons/wishlist.svg") no-repeat;
+  height: 32px;
+  width: 32px;
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  z-index: 3;
+  background-size: contain;
+}
+
+.wishlist-check:checked + .wishlist_icon {
+  background: url("../../assets/images/icons/wishlist-checked.svg") no-repeat;
+  background-size: contain;
+}/*# sourceMappingURL=ProductCard.css.map */

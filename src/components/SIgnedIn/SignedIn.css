@@ -1,0 +1,67 @@
+.signed-in {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #99834d;
+  border-radius: 6px;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: 2;
+}
+.signed-in .user-logo {
+  background-color: #552984;
+  width: 45px;
+  height: 45px;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signed-in .user-logo p {
+  padding: 17px 20px;
+  color: #fff;
+}
+.signed-in h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+.signed-in p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #585858;
+}
+.signed-in .custom-button {
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #552984;
+  color: #552984;
+  background-color: transparent;
+  padding: 12px 20px;
+  box-shadow: none;
+  width: 100%;
+}
+.signed-in .custom-button:hover {
+  border: 2px solid #552984;
+  color: #fff;
+  background-color: #552984;
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .signed-in {
+    top: 50px;
+    left: 0;
+    z-index: 1;
+  }
+}
+@media (max-width: 350px) {
+  .signed-in {
+    width: 100%;
+  }
+  .signed-in .btn-combo {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=SignedIn.css.map */

@@ -1,0 +1,135 @@
+@import '../../styles/scss/custom-variables';
+@import '../../styles/scss/custom-mixins';
+.h3{
+    background-color: #552984;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+.add-to-cart-wrapper {
+    .cart-history-wrapper {
+        max-height: 600px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 0.625rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #F8F8F8;;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #BCBCBC;
+            border-radius: 10px;
+        }
+
+        .cart-history {
+            padding: 15px;
+            border-radius: 4px;
+            border: 1px solid #E1E1E1;
+            background: #F9F9F9;
+            width: 98%;
+
+            h5 {
+                @include fontStyle(18px, 600);
+            }
+
+            p {
+                @include fontStyle(16px, 400);
+            }
+        }
+
+        .cart-history+.cart-history {
+            margin-top: 15px;
+        }
+
+        .quantity-counter {
+            border: 2px solid rgba(0, 0, 0, 0.40);
+            background-color: #ffffff;
+            max-width: 110px;
+            height: 50px;
+
+            .input-qty {
+                text-align: center;
+                border: none;
+                width: 40px;
+                background-color: #ffffff;
+                @include fontStyle(18px, 600);
+            }
+
+            & .qty-btn-plus {
+                color: $primary;
+            }
+
+            & .qty-btn-minus,
+            & .qty-btn-plus {
+                border: none;
+                font-size: 10px;
+                width: 30px;
+                transition: 0.3s;
+                background-color: #ffffff;
+                border-radius: 6px;
+                @include fontStyle(24px, 600);
+            }
+        }
+    }
+
+    .custom-icon-button {
+        @include fontStyle(14px, 400);
+        border: 2px solid $primary;
+        color: $primary;
+        background-color: transparent;
+
+        &:hover {
+            border: 2px solid $primary;
+            color: $primary;
+            background-color: transparent;
+        }
+    }
+
+}
+
+// Css for Stock Awailablity
+.product {
+    // margin: 10px;
+    text-align: center;
+    justify-content: center;
+  
+    p.product_status {
+      font-size: 16px;
+      padding: 5px;
+    //   border-radius: 5px;
+      width: 120px;
+  
+      &.product_status_in {
+        color: #22670F;
+        border-radius: 90px;
+       background: #DAFFD0;
+       font-weight: 600 !important;
+        
+      }
+  
+      &.product_status_out {
+        color: #5B0000;
+        border-radius: 90px;
+        background: #FFDADA;
+        font-weight: 600 !important;
+      }
+    }
+  }
+  
+@media (max-width: 767px) {
+    .add-to-cart-wrapper {
+        .cart-history-wrapper {
+            .cart-history {
+                padding: 25px;
+
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

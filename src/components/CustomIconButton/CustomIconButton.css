@@ -1,0 +1,18 @@
+.custom-icon-button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+  color: #552984;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.custom-icon-button:hover, .custom-icon-button:active {
+  border: 1px solid #99834d;
+  color: #552984;
+  background-color: transparent;
+}/*# sourceMappingURL=CustomIconButton.css.map */

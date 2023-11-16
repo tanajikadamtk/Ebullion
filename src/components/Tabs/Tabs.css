@@ -1,0 +1,56 @@
+.product-tabs .tabs {
+  margin: 0 auto;
+  font-size: 0;
+}
+.product-tabs .tabs > input[type=radio] {
+  display: none;
+}
+.product-tabs .tabs .content {
+  display: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.product-tabs #tab-btn-1:checked ~ #content-1,
+.product-tabs #tab-btn-2:checked ~ #content-2,
+.product-tabs #tab-btn-3:checked ~ #content-3 {
+  display: block;
+}
+.product-tabs .tabs label {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 2px 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+.product-tabs .tabs label ::after {
+  content: "";
+  border-bottom: 3px solid #000;
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+}
+.product-tabs .tabs > label:first-of-type {
+  text-align: right;
+}
+.product-tabs .tabs > label:last-of-type {
+  text-align: left;
+}
+.product-tabs .tabs > input[type=radio]:checked + label {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.product-tabs .tabs > input[type=radio]:checked + label .tabs > input[type=radio]:checked + label {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}/*# sourceMappingURL=Tabs.css.map */

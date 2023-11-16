@@ -1,0 +1,22 @@
+.footer {
+  color: #fff;
+  background-image: url(../../assets/images/background/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer p, .footer li a {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #fff;
+}
+.footer .social-media-icons li + li {
+  margin-left: 10px;
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .footer-break {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.css.map */

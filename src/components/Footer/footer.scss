@@ -1,0 +1,26 @@
+
+@import '../../styles/scss/custom-mixins';
+
+.footer{
+    color: #fff;
+    background-image: url(../../assets/images/background/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    p, li a{
+        @include fontStyle(14px, 300);
+        line-height: 21px; 
+        color: #fff;
+    }
+
+    .social-media-icons li + li{
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px){
+    .footer-break{
+        display: none;
+    }
+}

@@ -1,0 +1,14 @@
+.custom-icon-button {
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+.custom-icon-button:hover {
+  border: 1px solid #99834d;
+}/*# sourceMappingURL=CustomIconButton.css.map */
