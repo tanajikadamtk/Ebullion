@@ -1,7 +1,7 @@
 @import '../../styles/scss/custom-variables';
 @import '../../styles/scss/custom-mixins';
 
-.custom-icon-button{
+.custom-icon-button {
     padding: 10px 25px;
     border-radius: 6px;
     @include fontStyle(14px, 400);
@@ -13,9 +13,16 @@
     background-color: transparent;
     text-transform: uppercase;
 
-    &:hover, &:active{
-        border: 1px solid $secondary;
-        color: $primary;
-         background-color: transparent;
+    &:hover,
+    &:active {
+        img {
+            filter: brightness(1.9); //Updated 
+
+        }
+
+        cursor: pointer;
+        border: 2px solid $primary !important;
+        color: #ffffff !important;
+        background-color: $primary !important;
     }
 }

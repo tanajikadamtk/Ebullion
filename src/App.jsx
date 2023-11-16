@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./App.scss";
 // import ProductCard from './components/product/productCard';
 import { Header } from "./components/Header/header";

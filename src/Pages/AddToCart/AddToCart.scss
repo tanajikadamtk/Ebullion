@@ -1,11 +1,13 @@
 @import '../../styles/scss/custom-variables';
 @import '../../styles/scss/custom-mixins';
-.h3{
+
+.h3 {
     background-color: #552984;
     color: #fff;
     padding: 10px 25px;
     border-radius: 6px;
 }
+
 .add-to-cart-wrapper {
     .cart-history-wrapper {
         max-height: 600px;
@@ -16,7 +18,8 @@
         }
 
         &::-webkit-scrollbar-track {
-            background: #F8F8F8;;
+            background: #F8F8F8;
+            ;
             border-radius: 10px;
         }
 
@@ -82,11 +85,16 @@
         color: $primary;
         background-color: transparent;
 
-        &:hover {
-            border: 2px solid $primary;
-            color: $primary;
-            background-color: transparent;
-        }
+        // &:hover {
+        //     img {
+        //         filter: brightness(1.9); //Updated 
+
+        //     }
+
+        //     border: 2px solid $primary;
+        //     color: #ffffff;
+        //     background-color: $primary;
+        // }
     }
 
 }
@@ -96,37 +104,37 @@
     // margin: 10px;
     text-align: center;
     justify-content: center;
-  
+
     p.product_status {
-      font-size: 16px;
-      padding: 5px;
-    //   border-radius: 5px;
-      width: 120px;
-  
-      &.product_status_in {
-        color: #22670F;
-        border-radius: 90px;
-       background: #DAFFD0;
-       font-weight: 600 !important;
-        
-      }
-  
-      &.product_status_out {
-        color: #5B0000;
-        border-radius: 90px;
-        background: #FFDADA;
-        font-weight: 600 !important;
-      }
+        font-size: 16px;
+        padding: 5px;
+        //   border-radius: 5px;
+        width: 120px;
+
+        &.product_status_in {
+            color: #22670F;
+            border-radius: 90px;
+            background: #DAFFD0;
+            font-weight: 600 !important;
+
+        }
+
+        &.product_status_out {
+            color: #5B0000;
+            border-radius: 90px;
+            background: #FFDADA;
+            font-weight: 600 !important;
+        }
     }
-  }
-  
+}
+
 @media (max-width: 767px) {
     .add-to-cart-wrapper {
         .cart-history-wrapper {
             .cart-history {
                 padding: 25px;
 
-                img{
+                img {
                     margin: 0 auto;
                 }
             }

@@ -114,12 +114,21 @@
 .card-wrapper {
   .card {
     border: 2px solid $custom-border;
+
+    &:hover {
+
+      border: 2px solid $hover-border;
+      // transition: transform 0.3s ease;
+      transform: scale(1.1);
+
+    }
   }
 
   .card-body {
     display: flex;
     justify-content: space-between;
     border-top: 2px solid $custom-border;
+
 
     .card-title {
       @include fontStyle(14px, 400);
@@ -128,7 +137,7 @@
       margin-bottom: 0;
     }
 
-    .stroke{
+    .stroke {
       border-right: 2px solid $custom-border;
     }
 
@@ -302,11 +311,11 @@
     ::-webkit-scrollbar {
       width: 0.4rem;
     }
-  
+
     ::-webkit-scrollbar-track {
       background: #ffffff;
     }
-  
+
     ::-webkit-scrollbar-thumb {
       background: $primary;
     }

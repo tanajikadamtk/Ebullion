@@ -10,9 +10,9 @@
         padding: 15px 10px;
         color: $dark;
         position: absolute;
-        top: 60px;
+        top: 64px;
         // right: 0px;
-        left: -100px;
+        right: 5%;
         z-index: 3;
         @include fontStyle(14px, 400);
 
@@ -25,17 +25,17 @@
 }
 
 @media(max-width:991px) {
-    .search-box-show{
+    .search-box-show {
         .form-control {
             top: 70px;
             left: 0;
         }
     }
-    
+
 }
 
 @media(max-width:350px) {
-    .search-box-show{
+    .search-box-show {
         .form-control {
             width: 250px;
         }

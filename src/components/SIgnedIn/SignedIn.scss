@@ -2,14 +2,14 @@
 @import '../../styles/scss/custom-mixins';
 
 .signed-in {
-    width: 300px;
+    width: 296px;
     padding: 15px;
     border: 1px solid $secondary;
     border-radius: 6px;
     background-color: #fff;
     position: absolute;
-    top: 73px;
-    right: 15%;
+    top: 61px;
+    right: 3%;
     z-index: 2;
 
     .user-logo {

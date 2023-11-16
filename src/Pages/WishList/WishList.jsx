@@ -180,10 +180,7 @@ const WishList = () => {
                     </p>
                   </div>
                   <p>₹ 650</p>
-                  <CustomButton
-                    name="Add to Cart"
-                    classname="button button-outline"
-                  />
+                  <CustomButton name="Add to Cart" />
                   <img src={BinImg} alt="" className="img-fluid" />
                 </Col>
 
@@ -199,10 +196,7 @@ const WishList = () => {
                     </p>
                   </div>
                   <p>₹ 650</p>
-                  <CustomButton
-                    classname="button button-outline"
-                    name="Add to Cart"
-                  />
+                  <CustomButton name="Add to Cart" />
                   <img src={BinImg} alt="" className="img-fluid" />
                 </Col>
 
@@ -218,10 +212,7 @@ const WishList = () => {
                     </p>
                   </div>
                   <p>₹ 650</p>
-                  <CustomButton
-                    name="Add to Cart"
-                    classname="button button-outline"
-                  />
+                  <CustomButton name="Add to Cart" />
                   <img src={BinImg} alt="" className="img-fluid" />
                 </Col>
 
@@ -237,10 +228,7 @@ const WishList = () => {
                     </p>
                   </div>
                   <p>₹ 650</p>
-                  <CustomButton
-                    classname="button button-outline"
-                    name="Add to Cart"
-                  />
+                  <CustomButton name="Add to Cart" />
                   <img src={BinImg} alt="" className="img-fluid" />
                 </Col>
               </Row>

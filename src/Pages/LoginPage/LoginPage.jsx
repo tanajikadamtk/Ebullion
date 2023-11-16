@@ -144,7 +144,7 @@ let LoginPage = () => {
               </ul>
             </div>
             <CustomButton
-              classname="button button-primary w-100"
+              className="w-100"
               name={isChecked ? "Verify OTP" : "Login to continue"}
             />
           </div>

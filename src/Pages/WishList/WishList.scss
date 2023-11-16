@@ -77,10 +77,20 @@
       }
     }
 
+    // updated Scss 
     .custom-button {
       @include fontStyle(14px, 400);
-      padding: 12px 12px;
+      padding: 12px 24px;
       box-shadow: none;
+      font-weight: 500;
+      background-color: transparent !important;
+      color: $primary;
+
+      &:hover {
+        background-color: $primary !important;
+        color: white
+      }
+
     }
 
     .custom-icon-button {
@@ -89,11 +99,16 @@
       color: $primary;
       background-color: transparent;
 
-      &:hover {
-        border: 2px solid $primary;
-        color: $primary;
-        background-color: transparent;
-      }
+      // &:hover {
+      //   img {
+      //     filter: brightness(1.9); //Updated 
+
+      //   }
+
+      //   border: 2px solid $primary;
+      //   color: #ffffff;
+      //   background-color: $primary !important;
+      // }
     }
   }
 }
@@ -129,7 +144,7 @@
       .wishlist-history-wrapper {
         .wishlist-history h5 {
           padding: 15px;
-          font-size: 16px;
+          font-size: 14px;
           // border: 1px solid red;
 
           >* {
