@@ -34,10 +34,18 @@
 
 }
 
-@media(max-width:350px) {
+@media(max-width:768px) {
     .search-box-show {
         .form-control {
-            width: 250px;
+            width: 280px;
+        }
+    }
+}
+
+@media(max-width:375px) {
+    .search-box-show {
+        .form-control {
+            width: 240px;
         }
     }
 }

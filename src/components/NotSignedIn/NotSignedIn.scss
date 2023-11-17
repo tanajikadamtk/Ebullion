@@ -57,13 +57,36 @@
 @media(max-width:991px) {
     .not-signed-in {
         top: 50px;
-        left: 0;
+        left: 20px;
         z-index: 1;
     }
 }
 
-@media(max-width:350px) {
+@media(max-width:768px) {
     .not-signed-in {
-        width: 100%;
+        // width: 100%;
+        width: 260px;
+
+        .custom-button {
+            padding: 10px 16px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media(max-width:375px) {
+    .not-signed-in {
+        width: 248px;
+        padding: 14px;
+
+        .custom-button {
+            padding: 6px 10px;
+            font-size: 12px;
+        }
+
+        .btn-combo {
+
+            flex-direction: column;
+        }
     }
 }

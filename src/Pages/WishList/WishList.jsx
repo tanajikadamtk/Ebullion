@@ -140,7 +140,7 @@ const WishList = () => {
           </Row>
         </div> */}
 
-        {/* Display grids */}
+        {/* Display Flex */}
         <div className="wishlist-wrapper mt-2 mb-5">
           <Row>
             <Col>

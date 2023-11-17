@@ -129,6 +129,10 @@
     }
 }
 
+.img-fluid {
+    cursor: pointer;
+}
+
 @media (max-width: 767px) {
     .add-to-cart-wrapper {
         .cart-history-wrapper {
