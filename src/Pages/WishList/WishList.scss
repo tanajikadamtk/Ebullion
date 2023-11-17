@@ -4,6 +4,8 @@
 @import "../../styles/scss/custom-mixins";
 
 .wishlist {
+  margin: 0 20px;
+
   .headline_highlighted {
     background-color: $primary;
     color: $text-decoration-color;
@@ -18,8 +20,43 @@
   .wishlist-wrapper {
     .wishlist-history-wrapper {
       .wishlist-history {
+        padding: 10px;
+
+        .whish_content_wrap {
+          display: flex;
+
+          .inner_wrap {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+
+            .rupee_wrap {
+              display: flex;
+              justify-content: flex-start;
+            }
+
+            .delete_wrap {
+              display: flex;
+              justify-content: center;
+            }
+
+            .product {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              p {
+                min-width: 115px;
+              }
+
+            }
+          }
+        }
+
         .image_wrapper {
-          width: 97px;
+          width: 88px;
+          height: 88px;
 
           img {
             height: 100%;
@@ -45,22 +82,26 @@
         border-radius: 10px;
       }
 
+
+
       // Changes in flex To grid
       .wishlist-history {
-        display: grid !important;
-        grid-template-columns: repeat(6, 1fr);
-        place-items: center;
-        gap: 20px;
-        padding: 15px 30px;
+        // display: grid !important;
+        // grid-template-columns: repeat(6, 1fr);
+        // place-items: center;
+        display: flex;
         border-radius: 4px;
         border: 1px solid #e1e1e1;
         background: #f9f9f9;
         width: 98%;
+        gap: 5px;
 
         >* {
           display: flex;
           align-items: center;
-          justify-content: center;
+          // justify-content: center;
+          justify-content: space-between;
+          width: 100%;
         }
 
         h5 {
@@ -120,9 +161,9 @@
 
   p.product_status {
     font-size: 16px;
-    padding: 5px;
+    padding: 5px 12px;
     //   border-radius: 5px;
-    width: 120px;
+    width: auto !important;
 
     &.product_status_in {
       color: #22670F;
@@ -138,109 +179,100 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .wishlist {
     .wishlist-wrapper {
       .wishlist-history-wrapper {
-        .wishlist-history h5 {
-          padding: 15px;
-          font-size: 14px;
-          // border: 1px solid red;
-
-          >* {
+        .wishlist-history {
+          h5 {
+            gap: 20px;
+            // padding: 15px 30px;
+            // padding: 15px 0;
             font-size: 14px;
-            display: flex;
-            align-items: center !important;
-            justify-content: center !important;
+            margin: 0;
+
           }
 
-          img {
-            margin: 0 auto;
+          .whish_content_wrap {
+            // padding: 10px;
+            // display: grid !important;
+            // grid-template-columns: repeat(6, 1fr);
+            // place-items: center;
+            flex-direction: column;
+            align-items: flex-start;
 
+            .inner_wrap {
+              display: grid !important;
+              grid-template-columns: repeat(2, 2fr);
+              align-items: center;
+              // place-items: center;
+              gap: 3px;
+            }
+
+            .rupee_wrap {
+              padding: 7px 0;
+
+              p {
+                font-size: 14px;
+              }
+            }
+
+            .image_wrapper {
+              width: 97px;
+              height: 102px;
+            }
+
+            .custom-button {
+              padding: 4px 10px;
+            }
+
+            .product {
+              margin-top: -51px;
+
+              p {
+                font-size: 12px;
+                padding: auto;
+
+              }
+            }
+
+            .add_cart_wrap {
+              button {
+                font-size: 14px;
+              }
+            }
           }
         }
+
+        // border: 1px solid red;
+
+        // >* {
+        //   font-size: 14px !important;
+        //   display: flex;
+        //   align-items: center !important;
+        //   justify-content: center !important;
+        // }
+
+        img {
+          margin: 0 auto;
+
+        }
+
+        // }
       }
+
     }
+
+
   }
 }
 
 
+// @media (max-width: 425px) {
+//   .wishlist .wishlist-wrapper .wishlist-history-wrapper .wishlist-history .whish_content_wrap .inner_wrap .product p {
+//     font-size: 12px;
+//     // white-space: nowrap;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @media (max-width: 767px) {
-//   .wishlist {
-//     .wishlist-wrapper {
-//       .wishlist-history-wrapper {
-//         .wishlist-history {
-//           padding: 12px;
-//           font-size: 14px;
-//           // grid-template-columns: repeat(2, 3fr);  
-//           h5{
-//             font-size: 14px;
-//             font-weight: 600;
-//           }
-//           .custom-button {
-//                    @include fontStyle(12px, 400);
-//                        padding: 6px 6px;
-//                        box-shadow: none;}
-//           > *{  
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             padding: 0px;
-//           }
-
-
-//           img {
-//             margin: 0 auto;
-//           }
-//         }
-//       }
-//     }
 //   }
-
-// }
-// @media (max-width:1440px) {
-//   .wishlist .wishlist-wrapper .custom-button{
-//     padding: 10px 20px;
-//   }
-
-
-
-// }
-
-
-// // Media query for iPad Mini
-// @media only screen and (min-width: 520px) {
-//   .custom-button {
-//     @include fontStyle(14px, 400);
-//     padding: 6px 6px;
-//     box-shadow: none;
-//   }
-//   body {
-//     font-size: 16px; // Adjust font size for iPad Mini
-//   }
-
-//   // Add more styles as needed for your specific design
 // }

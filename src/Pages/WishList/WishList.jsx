@@ -141,7 +141,6 @@ const WishList = () => {
         </div> */}
 
         {/* Display grids */}
-        <h1>Grid</h1>
         <div className="wishlist-wrapper mt-2 mb-5">
           <Row>
             <Col>
@@ -152,84 +151,165 @@ const WishList = () => {
                   <div className="image_wrapper">
                     <img src={WishListImg} alt="" className="img-fluid" />
                   </div>
-                  <h5>Gold Bar (50 gm)</h5>
+                  <div className="whish_content_wrap">
+                    <h5>Gold Bar (50 gm)</h5>
+                    <div className="inner_wrap">
+                      <div className="rupee_wrap">
+                        <p>₹ 650</p>
+                      </div>
 
-                  <div className="product">
-                    <p className=" product_status product_status_in">
-                      In Stock
-                    </p>
+                      <div className="product">
+                        <p className=" product_status product_status_in">
+                          In Stock
+                        </p>
+                      </div>
+                      <div className="add_cart_wrap">
+                        <CustomButton
+                          className="img-fluid"
+                          name="Add to Cart"
+                        />
+                      </div>
+                      <a className="delete_wrap" href="">
+                        <img
+                          src={BinImg}
+                          alt="Add to Cart Button"
+                          className="img-fluid"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <p>₹ 650</p>
-                  <CustomButton className="img-fluid" name="Add to Cart" />
-                  <img
-                    src={BinImg}
-                    alt="Add to Cart Button"
-                    className="img-fluid"
-                  />
-                </Col>
-
-                <Col xs={12} className="wishlist-history">
-                  <div className="image_wrapper">
-                    <img src={WishListImg} alt="" className="img-fluid" />
-                  </div>
-                  <h5>Gold Bar (50 gm) long</h5>
-                  {/* Add Product Stock Status  */}
-                  <div className="product">
-                    <p className="product_status product_status_out">
-                      Out Of Stock
-                    </p>
-                  </div>
-                  <p>₹ 650</p>
-                  <CustomButton name="Add to Cart" />
-                  <img src={BinImg} alt="" className="img-fluid" />
                 </Col>
 
                 <Col xs={12} className=" wishlist-history">
                   <div className="image_wrapper">
                     <img src={WishListImg} alt="" className="img-fluid" />
                   </div>
-                  <h5>Gold Bar (50 gm)</h5>
-                  {/* Add Product Stock Status  */}
-                  <div className="product">
-                    <p className=" product_status product_status_in">
-                      In Stock
-                    </p>
+                  <div className="whish_content_wrap">
+                    <h5>Gold Bar (50 gm)</h5>
+                    <div className="inner_wrap">
+                      <div className="rupee_wrap">
+                        <p>₹ 650</p>
+                      </div>
+
+                      <div className="product">
+                        <p className="product_status product_status_out">
+                          Out Of Stock
+                        </p>
+                      </div>
+                      <div className="add_cart_wrap">
+                        <CustomButton
+                          className="img-fluid"
+                          name="Add to Cart"
+                        />
+                      </div>
+                      <a className="delete_wrap" href="">
+                        <img
+                          src={BinImg}
+                          alt="Add to Cart Button"
+                          className="img-fluid"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <p>₹ 650</p>
-                  <CustomButton name="Add to Cart" />
-                  <img src={BinImg} alt="" className="img-fluid" />
                 </Col>
 
                 <Col xs={12} className=" wishlist-history">
                   <div className="image_wrapper">
                     <img src={WishListImg} alt="" className="img-fluid" />
                   </div>
-                  <h5>Gold Bar (50 gm)</h5>
-                  {/* Add Product Stock Status  */}
-                  <div className="product">
-                    <p className="product_status product_status_out">
-                      Out Of Stock
-                    </p>
+                  <div className="whish_content_wrap">
+                    <h5>Gold Bar (50 gm)</h5>
+                    <div className="inner_wrap">
+                      <div className="rupee_wrap">
+                        <p>₹ 650</p>
+                      </div>
+
+                      <div className="product">
+                        <p className=" product_status product_status_in">
+                          In Stock
+                        </p>
+                      </div>
+                      <div className="add_cart_wrap">
+                        <CustomButton
+                          className="img-fluid"
+                          name="Add to Cart"
+                        />
+                      </div>
+                      <a className="delete_wrap" href="">
+                        <img
+                          src={BinImg}
+                          alt="Add to Cart Button"
+                          className="img-fluid"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <p>₹ 650</p>
-                  <CustomButton name="Add to Cart" />
-                  <img src={BinImg} alt="" className="img-fluid" />
                 </Col>
 
                 <Col xs={12} className=" wishlist-history">
                   <div className="image_wrapper">
                     <img src={WishListImg} alt="" className="img-fluid" />
                   </div>
-                  <h5>Gold Bar (50 gm)</h5>
-                  {/* Add Product Stock Status  */}
-                  <div className="product">
-                    <p className=" product_status product_status_in">
-                      In Stock
-                    </p>
+                  <div className="whish_content_wrap">
+                    <h5>Gold Bar (50 gm)</h5>
+                    <div className="inner_wrap">
+                      <div className="rupee_wrap">
+                        <p>₹ 650</p>
+                      </div>
+
+                      <div className="product">
+                        <p className="product_status product_status_out">
+                          Out Of Stock
+                        </p>
+                      </div>
+                      <div className="add_cart_wrap">
+                        <CustomButton
+                          className="img-fluid"
+                          name="Add to Cart"
+                        />
+                      </div>
+                      <a className="delete_wrap" href="">
+                        <img
+                          src={BinImg}
+                          alt="Add to Cart Button"
+                          className="img-fluid"
+                        />
+                      </a>
+                    </div>
                   </div>
-                  <p>₹ 650</p>
-                  <CustomButton name="Add to Cart" />
-                  <img src={BinImg} alt="" className="img-fluid" />
+                </Col>
+
+                <Col xs={12} className=" wishlist-history">
+                  <div className="image_wrapper">
+                    <img src={WishListImg} alt="" className="img-fluid" />
+                  </div>
+                  <div className="whish_content_wrap">
+                    <h5>Gold Bar (50 gm)</h5>
+                    <div className="inner_wrap">
+                      <div className="rupee_wrap">
+                        <p>₹ 650</p>
+                      </div>
+
+                      <div className="product">
+                        <p className=" product_status product_status_in">
+                          In Stock
+                        </p>
+                      </div>
+                      <div className="add_cart_wrap">
+                        <CustomButton
+                          className="img-fluid"
+                          name="Add to Cart"
+                        />
+                      </div>
+                      <a className="delete_wrap" href="">
+                        <img
+                          src={BinImg}
+                          alt="Add to Cart Button"
+                          className="img-fluid"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </Col>
               </Row>
 

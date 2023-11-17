@@ -1,26 +1,42 @@
-
 @import '../../styles/scss/custom-mixins';
 
-.footer{
+.footer {
     color: #fff;
     background-image: url(../../assets/images/background/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    p, li a{
+    p,
+    li a {
         @include fontStyle(14px, 300);
-        line-height: 21px; 
+        line-height: 21px;
         color: #fff;
+
+
+
     }
 
-    .social-media-icons li + li{
+    // Apply Hover Effect
+    li a:hover {
+        text-decoration: underline;
+        // color: rgb(40, 107, 207);
+    }
+
+    .social-media-icons li {
         margin-left: 10px;
+
+        // Apply Hover Effect
+        &:hover {
+            background-color: #ffffff;
+            // border-radius: 10%;
+            border-radius: 100%;
+        }
     }
 }
 
-@media (min-width: 767px) and (max-width: 992px){
-    .footer-break{
+@media (min-width: 767px) and (max-width: 992px) {
+    .footer-break {
         display: none;
     }
 }
